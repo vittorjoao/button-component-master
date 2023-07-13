@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap");
+
+:root {
+  --font-poppins: "Poppins", sans-serif;
+  --font-ubunto: "Ubuntu Mono", monospace;
+  --font-noto-sans: "Noto Sans JP", sans-serif;
+
+  --color-gray-1: #333;
+  --color-gray-2: #828282;
+
+  --color-default: #e0e0e0;
+  --color-primary: #3d5afe;
+  --color-secondary: #455a64;
+  --color-danger: #d32f2f;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+main {
+  margin: 24px;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 0px 45px 0px;
+  gap: 128px;
+}
+
+.row-section {
+  display: flex;
+  flex-direction: row;
+  gap: 45px;
+  align-items: flex-start;
+  margin-bottom: 45px;
+}
+
+.col-section {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.title {
+  font-family: var(--font-poppins);
+  font-size: 24px;
+  margin-bottom: 28px;
+}
+
+.button-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.button-code {
+  font-family: var(--font-ubunto);
+  font-size: 12px;
+  color: var(--color-gray-1);
+}
+
+.button-state {
+  font-family: var(--font-ubunto);
+  font-size: 12px;
+  color: var(--color-gray-2);
+}
+
+/* base button */
+
+.button {
+  width: fit-content;
+  color: #3f3f3f;
+  text-align: center;
+  font-family: var(--font-noto-sans);
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  flex-shrink: 0;
+  border-radius: 6px;
+  border: none;
+}
+
+/* variant default */
+
+.button.default {
+  padding: 8px 16px;
+  background-color: var(--color-default);
+  box-shadow: 0px 2px 3px 0px rgba(51, 51, 51, 0.2);
+}
+
+.button.default:hover,
+.button.default:focus,
+.button.default.active {
+  background-color: #aeaeae;
+}
+
+/* variant outline */
+
+.button.outline {
+  padding: 8px 20px;
+  border: 1px solid var(--color-default);
+  background-color: transparent;
+  color: var(--color-default);
+}
+
+.button.outline:hover,
+.button.outline:focus,
+.button.outline.active {
+  background-color: rgba(41, 98, 255, 0.1);
+}
+
+/* variant text */
+
+.button.text {
+  padding: 8px 20px;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.button.text:hover,
+.button.text:focus,
+.button.text.active {
+  background-color: #aeaeae;
+}
+
+/* size small */
+
+.button.sm {
+  padding: 6px 12px;
+}
+
+/* size medium */
+
+.button.md {
+  padding: 8px 16px;
+}
+
+/* size large */
+
+.button.lg {
+  padding: 11px 22px;
+}
+
+/* color primary */
+
+.button.primary {
+  background-color: var(--color-primary);
+  color: white;
+  box-shadow: 0px 2px 3px 0px rgba(41, 98, 255, 0.2);
+}
+
+.button.outline.primary {
+  border: 1px solid var(--color-primary);
+  background-color: transparent;
+  color: var(--color-primary);
+}
+
+.button.text.primary {
+  background-color: transparent;
+  color: var(--color-primary);
+  box-shadow: none;
+}
+
+.button.primary:hover,
+.button.primary:focus,
+.button.primary.active {
+  background-color: #0039cb;
+}
+
+.button.outline.primary:hover,
+.button.outline.primary:focus,
+.button.outline.primary.active {
+  background-color: rgba(41, 98, 255, 0.1);
+}
+
+.button.text.primary:hover,
+.button.text.primary:focus,
+.button.text.primary.active {
+  background-color: rgba(41, 98, 255, 0.1);
+}
+
+/* color secondary */
+
+.button.secondary {
+  background-color: var(--color-secondary);
+  color: white;
+  box-shadow: 0px 2px 3px 0px rgba(69, 90, 100, 0.2);
+}
+
+.button.outline.secondary {
+  border: 1px solid var(--color-secondary);
+  background-color: transparent;
+  color: var(--color-secondary);
+}
+
+.button.text.secondary {
+  background-color: transparent;
+  color: var(--color-secondary);
+  box-shadow: none;
+}
+
+.button.secondary:hover,
+.button.secondary:focus,
+.button.secondary.active {
+  background-color: #1c313a;
+}
+
+.button.outline.secondary:hover,
+.button.outline.secondary:focus,
+.button.outline.secondary.active {
+  background-color: rgba(69, 90, 100, 0.1);
+}
+
+.button.text.secondary:hover,
+.button.text.secondary:focus,
+.button.text.secondary.active {
+  background-color: rgba(69, 90, 100, 0.1);
+}
+
+/* color danger */
+
+.button.danger {
+  background-color: var(--color-danger);
+  color: white;
+  box-shadow: 0px 2px 3px 0px rgba(211, 47, 47, 0.2);
+}
+
+.button.outline.danger {
+  border: 1px solid var(--color-danger);
+  background-color: transparent;
+  color: var(--color-danger);
+}
+
+.button.text.danger {
+  background-color: transparent;
+  color: var(--color-danger);
+  box-shadow: none;
+}
+
+.button.danger:hover,
+.button.danger:focus,
+.button.danger.active {
+  background-color: #9a0007;
+}
+
+.button.outline.danger:hover,
+.button.outline.danger:focus,
+.button.outline.danger.active {
+  background-color: rgba(211, 47, 47, 0.1);
+}
+
+.button.text.danger:hover,
+.button.text.danger:focus,
+.button.text.danger.active {
+  background-color: rgba(211, 47, 47, 0.1);
+}
+
+/* disableShadow */
+
+.button.disableShadow {
+  box-shadow: none;
+}
+
+/* disabled */
+
+.button.disabled,
+.button.disabled:hover,
+.button.disabled:focus {
+  background-color: var(--color-default);
+  color: #9e9e9e;
+}
+
+.button.text.disabled {
+  background-color: transparent;
+}
+
+/* icons */
+
+.material-icons-sharp {
+  font-size: 18px;
+}
+
+.button.icon {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 8px;
+}
